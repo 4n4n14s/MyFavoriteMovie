@@ -1,0 +1,89 @@
+[
+  {
+    "ContainingType": "Movies.API.Features.Movies.Commands.Delete.MovieDeleteEndPoint\u002B\u003C\u003Ec",
+    "Method": "\u003CMapDeleteEndPoint\u003Eb__0_0",
+    "RelativePath": "DeleteMovie/{UUId}",
+    "HttpMethod": "DELETE",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "UUId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Movies.API.Features.Movies.Commands.Update.MovieUpdateEndPoint\u002B\u003C\u003Ec",
+    "Method": "\u003CMapUpdateEndPoint\u003Eb__0_0",
+    "RelativePath": "editMovie/{UUId}",
+    "HttpMethod": "PUT",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "UUId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "command",
+        "Type": "Movies.API.Features.Movies.Commands.Update.MovieUpdateCommand\u002BUpdateCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Movies.API.Features.Movies.Queries.GetAllMovies.EndPointGetMovies\u002B\u003C\u003Ec",
+    "Method": "\u003CMapGetAllMovies\u003Eb__0_0",
+    "RelativePath": "movies",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Movies.API.Features.Movies.Commands.Created.MovieCreateEndpoint\u002B\u003C\u003Ec",
+    "Method": "\u003CMapCreateEndPoint\u003Eb__0_0",
+    "RelativePath": "SaveMovie",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "Movies.API.Features.Movies.Commands.Created.MovieCreateCommand\u002BCreateCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  }
+]
